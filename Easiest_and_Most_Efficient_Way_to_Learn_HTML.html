@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Learn about essential HTML tags and my journey in front-end development."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Front-End Development, Web Development"
+    />
+    <meta name="author" content="Your Name" />
+    <title>Easiest and Most Efficient Way to Learn HTML</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .code-container {
+        position: relative;
+      }
+      pre {
+    /* position: relative; */
+    padding: 1em;
+    background: #222222;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 25px;
+}
+
+      .fa-copy {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blogHero">
+      <div class="overlay">
+        <div class="overlay-menu">
+          <div class="menu-item">
+            <p id="active"><a href="#">Home</a></p>
+          </div>
+          <div class="menu-item">
+            <p><a href="index.html#about">About</a></p>
+          </div>
+          <div class="menu-item">
+            <p><a href="index.html#work">Work</a></p>
+          </div>
+          <div class="menu-item">
+            <p><a href="index.html#blog">Blog</a></p>
+          </div>
+          <div class="menu-item">
+            <p><a href="index.html#contact">Contact</a></p>
+          </div>
+        </div>
+        <div class="sub-nav">
+          <p><a href="#">Instagram</a></p>
+          <p>.</p>
+          <p><a href="#">Youtube</a></p>
+          <p>.</p>
+          <p><a href="#">Dribble</a></p>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div class="logo">M<span class="logo-span">A</span>S</div>
+        <div class="toggle-btn">
+          <button
+            class="burger"
+            onclick="this.classList.toggle('active')"
+          ></button>
+        </div>
+      </div>
+      <div class="blogContainer">
+        <h1>Easiest and Most Efficient Way to Learn HTML</h1>
+        <p class="blog-para">
+          As a developer starting your journey, the first language you will
+          encounter is HTML. When I started learning HTML, I was overwhelmed by
+          the number of tags. How was I supposed to learn them all? After taking
+          some great courses, I understood that you don’t need to learn all the
+          tags. There are only a few essential tags that a developer needs while
+          coding in HTML.
+        </p>
+
+        <h2>DIV</h2>
+        <p class="blog-para">
+          The div tag, short for division tag, is one of the most widely used
+          tags in HTML. It is mainly used to create different sections within a
+          webpage. Inside a div, you can have different headings, paragraphs,
+          lists, and buttons. You can create different divs with different
+          classes, headings, paragraphs, and so on. Then, you can style these
+          divs using CSS and JavaScript. Think of a div as a container with
+          various items, each with a different name and design.
+        </p>
+        <div class="code-container">
+          <i class="fa-solid fa-copy" onclick="copyCode(this)"></i>
+          <pre><code>&lt;div class="container"&gt;
+  &lt;h1&gt;Main Heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+
+        <h2>H1</h2>
+        <p class="blog-para">
+          The h1 tag is used for the main heading of your webpage. It is one of
+          the most important and useful tags in HTML, not only for structuring
+          your content but also for SEO. There are six different heading tags,
+          from h1 to h6, with h1 being the most important and h6 the least. For
+          beginners, it’s best to use h1 for main headings and decrease the size
+          with subsequent headings.
+        </p>
+        <div class="code-container">
+          <i class="fa-solid fa-copy" onclick="copyCode(this)"></i>
+          <pre><code>&lt;h1&gt;This is an H1 Heading&lt;/h1&gt;
+&lt;h2&gt;This is an H2 Heading&lt;/h2&gt;
+&lt;h3&gt;This is an H3 Heading&lt;/h3&gt;</code></pre>
+        </div>
+
+        <h2>P</h2>
+        <p class="blog-para">
+          The p tag stands for paragraph. As the name suggests, it is used to
+          add paragraphs to your website. Regardless of the paragraph's length,
+          it can be enclosed within p tags. p tags are block-level elements
+          separated by blank lines.
+        </p>
+        <div class="code-container">
+          <i class="fa-solid fa-copy" onclick="copyCode(this)"></i>
+          <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+        </div>
+
+        <h2>A</h2>
+        <p class="blog-para">
+          The a tag defines a hyperlink. It is used to link to other pages or
+          sections of the same page. The href attribute is crucial in a tags,
+          where you usually put the link inside quotation marks after href. The
+          syntax of an a tag is typically:
+        </p>
+        <div class="code-container">
+          <i class="fa-solid fa-copy" onclick="copyCode(this)"></i>
+          <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+        </div>
+
+        <h2>UL</h2>
+        <p class="blog-para">
+          The ul tag stands for an unordered list, meaning it will create a
+          bulleted list. Each item in the list is placed within li tags. ul tags
+          can be nested as needed and are commonly used to create navigation
+          bars. The syntax of a ul tag is:
+        </p>
+        <div class="code-container">
+          <i class="fa-solid fa-copy" onclick="copyCode(this)"></i>
+          <pre><code>&lt;ul&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </div>
+
+        <h2>Additional Important HTML Tags</h2>
+
+        <h3>&lt;head&gt; and &lt;body&gt;</h3>
+        <p class="blog-para">
+          <strong>&lt;head&gt;</strong>: Contains meta-information about the
+          HTML document, such as its title, linked scripts and stylesheets, and
+          metadata.
+        </p>
+        <div class="code-container">
+          <i class="fa-solid fa-copy" onclick="copyCode(this)"></i>
+          <pre><code>&lt;head&gt;
+  &lt;title&gt;My Web Page&lt;/title&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="description" content="A description of my web page for SEO."&gt;
+  &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;</code></pre>
+        </div>
+        <p class="blog-para">
+          <strong>&lt;body&gt;</strong>: Contains the content of the HTML
+          document, such as text, images, links, and other media.
+        </p>
+        <div class="code-container">
+          <i class="fa-solid fa-copy" onclick="copyCode(this)"></i>
+          <pre><code>&lt;body&gt;
+  &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+  &lt;p&gt;This is the main content of the page.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+        </div>
+
+        <h3>&lt;img&gt;</h3>
+        <p class="blog-para">
+          The img tag is used to embed images in an HTML page. It is a
+          self-closing tag and requires the src attribute to specify the image
+          source and the alt attribute for alternative text.
+        </p>
+        <div class="code-container">
+          <i class="fa-solid fa-copy" onclick="copyCode(this)"></i>
+          <pre><code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code></pre>
+        </div>
+
+        <h3>&lt;table&gt;</h3>
+        <p class="blog-para">
+          The table tag is used to create tables in HTML. It consists of rows
+          (tr) and cells (td for data cells and th for header cells).
+        </p>
+        <div class="code-container">
+          <i class="fa-solid fa-copy" onclick="copyCode(this)"></i>
+          <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+
+        <h3>&lt;form&gt;</h3>
+        <p class="blog-para">
+          The form tag is used to create forms for user input. It contains form
+          elements like input fields (input), dropdowns (select), text areas
+          (textarea), and buttons.
+        </p class="blog-para" >
+        <div class="code-container">
+          <i class="fa-solid fa-copy" onclick="copyCode(this)"></i>
+          <pre><code>&lt;form action="/submit-form" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+
+        <p class="blog-para">
+          These tags are what you will mostly use in your HTML pages. However,
+          it doesn’t mean you shouldn’t learn other tags. Understanding the
+          functionality of each HTML tag is essential. Search for the tags and
+          use them as needed. While learning every tag in HTML is impractical,
+          mastering the most commonly used ones will significantly aid your
+          development journey. HTML might not be the hardest language in web
+          development, but it is foundational.
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"
+      integrity="sha512-IxxYrSNXnt/RJlxNX40+7BQL88FLqvdpVpuV9AuvpNH/NFP0L8xA8WLxWTXx6PYExB5R/ktQisp6tIrnLn8xvw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="script.js"></script>
+    <script>
+      function copyCode(element) {
+        const codeBlock = element.nextElementSibling.querySelector("code");
+        const range = document.createRange();
+        range.selectNode(codeBlock);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        try {
+          document.execCommand("copy");
+          alert("Code copied to clipboard!");
+        } catch (err) {
+          console.error("Failed to copy code: ", err);
+        }
+        window.getSelection().removeAllRanges();
+      }
+    </script>
+  </body>
+</html>
