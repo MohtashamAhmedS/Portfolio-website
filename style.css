@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Arbutus&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arbutus&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Atomic+Age&family=Audiowide&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Atomic+Age&family=Audiowide&family=Bruno+Ace+SC&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Atomic+Age&family=Audiowide&family=Bruno+Ace+SC&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Audiowide&family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Audiowide&family=Bruno+Ace+SC&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -24,14 +25,13 @@ body::-webkit-scrollbar {
   display: block;
   height: 87vh;
 }
-.logo {
-  font-family: "Arbutus", serif;
-  font-size: 36px;
-  color: white;
+.logo img {
+  width: 52px;
+  padding-top: 10px;
 }
 
 .logo-span {
-  font-family: "Arbutus", serif;
+  font-family: 'Playwrite NL', cursive;
   font-size: 36px;
   background: -webkit-linear-gradient(#d8a818, #ffedb5);
   -webkit-background-clip: text;
@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
 
 .burger::before,
 .burger::after {
-  content: "";
+  content: '';
   width: 40px;
   height: 2px;
   position: absolute;
@@ -103,7 +103,7 @@ body::-webkit-scrollbar {
   height: 100vh;
   display: none;
   /* background: radial-gradient(#37383f, #010101); */
-  background-image: url("https://images.pexels.com/photos/1694000/pexels-photo-1694000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url('https://images.pexels.com/photos/1694000/pexels-photo-1694000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   opacity: 0;
 
   will-change: transform;
@@ -134,7 +134,7 @@ body::-webkit-scrollbar {
   text-align: center;
   font-size: 6vw;
   will-change: transform;
-  font-family: "Atomic Age";
+  font-family: 'Atomic Age';
   letter-spacing: -0.05em;
   transition: letter-spacing 0.3s;
 }
@@ -146,12 +146,12 @@ body::-webkit-scrollbar {
 .menu-item p a {
   text-decoration: none;
   color: white;
-  font-family: "Bruno Ace SC", sans-serif;
+  font-family: 'Bruno Ace SC', sans-serif;
   overflow: none;
 }
 
 .menu-item p#active::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 0;
@@ -261,7 +261,7 @@ video {
 .second-con-1 h1 {
   font-size: 64px;
   color: white;
-  font-family: "Petrona", serif;
+  font-family: 'Petrona', serif;
 }
 
 .second-con-1 p {
@@ -322,20 +322,17 @@ video {
 .card {
   border: 1px solid white;
   border-radius: 15px;
-  flex: 1;
-  margin: 0px 15px;
   position: relative;
   display: flex;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-
   object-fit: cover;
   overflow: hidden;
   height: 400px;
-  margin-bottom: 60px;
-  /* width: 500px; */
-  /* height: 260px; */
+  margin: 0 15px 60px;
+  flex: 0 1 calc(33.333% - 30px);
+  box-sizing: border-box;
 }
 
 .card-img {
@@ -350,7 +347,7 @@ video {
 }
 
 .card-img-one {
-  background-image: url(/src/images/one.jpg);
+  background-image: url(/src/images/splitter.png);
 }
 
 .card-img-second {
@@ -361,6 +358,10 @@ video {
   background-image: url(/src/images/Typing.png);
 }
 
+.card-img-fourth {
+  background-image: url(/src/images/one.jpg);
+}
+
 .card-span {
   font-weight: 700;
   letter-spacing: 1px;
@@ -369,6 +370,7 @@ video {
   transform: translateY(25px);
   color: #000;
   text-decoration: none;
+  backdrop-filter: blur(3px);
 }
 
 .card-span:hover {
@@ -393,6 +395,7 @@ video {
   top: 40%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Offset the position to center */
+  backdrop-filter: blur(2px);
 }
 
 .card img {
@@ -410,6 +413,7 @@ video {
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 48px;
+  letter-spacing: -2px;
   margin-bottom: 50px;
 }
 
@@ -645,18 +649,9 @@ video {
     font-weight: 600;
     color: white;
   }
-  .logo {
-    font-family: "Arbutus", serif;
-    font-size: 64px;
-    color: white;
-  }
-
-  .logo-span {
-    font-family: "Arbutus", serif;
-    font-size: 64px;
-    background: -webkit-linear-gradient(#d8a818, #ffedb5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* For browsers that support this property */
+  .logo img {
+    width: 78px;
+    /* padding-top: 10px; */
   }
   .container-link {
     font-size: 42px;
@@ -710,6 +705,7 @@ video {
   .card-con {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .card-main-heading {
     color: white;
@@ -720,13 +716,22 @@ video {
   .card h1 {
     opacity: 0;
     top: -15%;
-    font-size: 36px; /* Center vertically */
+    font-size: 36px;
+    backdrop-filter: blur(2px);
   }
 
   .card:hover h1 {
     opacity: 1;
     top: 40%;
     color: #000000;
+  }
+
+  .card-img {
+    transition: filter 2s;
+  }
+
+  .card:hover .card-img {
+    /* filter: blur(1px); */
   }
 
   .card-span {
