@@ -347,11 +347,11 @@ video {
 }
 
 .card-img-one {
-  background-image: url(/src/images/splitter.png);
+  background-image: url(/src/images/qrcode.png);
 }
 
 .card-img-second {
-  background-image: url(/src/images/second.jpg);
+  background-image: url(/src/images/splitter.png);
 }
 
 .card-img-third {
@@ -359,6 +359,10 @@ video {
 }
 
 .card-img-fourth {
+  background-image: url(/src/images/second.jpg);
+}
+
+.card-img-fifth {
   background-image: url(/src/images/one.jpg);
 }
 
